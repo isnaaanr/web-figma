@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Figma web</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Reservasi</title>
+    <link rel="stylesheet" href="/reservasi/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,19 +25,19 @@
       </div>
     </header>
     <div class="main">
-      <div class="content-1">
-        <h3>Halo, Selamat Datang</h3>
-        <h1>Temukan Cita Rasa <br />Masakan kami</h1>
-        <p>
-          Sajikan kebahagiaan di setiap meja makan Anda.<br />Makanan lezat,
-          momen tak terlupakan
-        </p>
-        <div class="button">
-          <button onclick="location.href='/reservasi/index.html'">
-            <b>Reservasi</b>
-          </button>
-        </div>
-      </div>
+      <form action="/index.html">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" name="name"/>
+        <label for="no">Nomor Telephone:</label>
+        <input type="number" id="no" name="no"/>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"/>
+        <label for="jumlah">Jumlah Orang:</label>
+        <input type="number" id="jumlah" name="jumlah"/>
+        <label for="Date">Hari:</label>
+        <input type="date" id="Date" name="Date"></br>
+        <input type="submit" value="Submit" class="submit">
+      </form>
     </div>
     <footer>&copy 2024 Isznnaa</footer>
   </body>

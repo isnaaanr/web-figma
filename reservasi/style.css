@@ -23,49 +23,49 @@
     padding: 5px;
 }
 
-.main {
-    background-image: url('food.jpg');
+.main{
+    padding-top: 100px;
+    background-image: url('/reservasi/food.jpg');
     height: 90dvh;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
     background-size: cover;
     filter: brightness(120%);
-    font-weight: bold;
+    
 }
-
-.content-1 {
+form{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    color: black;
-    padding-left: 50px;
-    padding-top: 58px;
-    height: 100dvh;
-    text-shadow: 2px 2px 6px white;
-}
-
-
-p {
-    font-size: large;
-    color: black;
-    text-shadow: 0px 2px 2px white;
-    font-weight: 900 !important;
-}
-
-.button{
-    margin-top: 20px;
-}
-
-button {
-    padding: 10px 20px;
+    position: fixed;
+    background-color: rgba(189, 189, 188, 0.714);
+    font-weight: bold;
+    margin-top: 0px;
+    width: 30%;
     border-radius: 15px;
-    cursor: pointer;
+    border-style: solid;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px; 
+    gap: 3px;
 }
 
-button:hover {
-    background-color: black;
+form:hover{
+    background-color:rgba(189, 189, 188, 0.874) ;
+    
+}
+
+.submit{
+    background-color: rgba(0, 0, 0, 0.854);
+    border-style: none;
     color: white;
-    transition: all .5s;
+    padding: 8px 20px;
+    border-radius: 8px;
+}
+
+.submit:hover{
+    background-color: rgb(0, 0, 0);
 }
 
 ul{
@@ -86,12 +86,21 @@ li a{
 footer{
     padding-left: 10px;
     text-align: center;
-    bottom: 0;
     width: 100%;
     height:50px;
     line-height:50px;
   }
 
   @media only screen and (max-width: 768px) {
-    
+    form {
+        width: 300px;
+    }
+  }
+  @media only screen and (max-width: 368px) {
+    .main {
+        height: 100dvh;
+    }
+    form {
+        width: 300px;
+    }
   }
