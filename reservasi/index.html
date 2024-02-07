@@ -16,9 +16,17 @@
     <header>
       <div class="navbar">
         <div class="logo">Kitchennnnn</div>
-        <ul>
+        <div id="hamburger" style="font-size: 30px;">=</div>
+      <ul class="hidden" id="menu">
           <li><a href="../index.html">Home</a></li>
-          <li><a href="/menu/index.html">Menu</a></li>
+          <li class="dropdown">
+            <a href="/menu/index.html" class="dropbtn">Menu</a>
+            <div class="dropdown-content">
+              <a href="/menu/#sate">Sate Ayam</a>
+              <a href="/menu/#nasgor">Nasi Goreng</a>
+              <a href="/menu/#bakso">Bakso</a>
+            </div>
+          </li>
           <li><a href="">Lokasi</a></li>
           <li><a href="/reservasi/index.html">Reservasi</a></li>
         </ul>
@@ -40,5 +48,13 @@
       </form>
     </div>
     <footer>&copy 2024 Isznnaa</footer>
+    <script>
+      const Hamburger = document.getElementById('hamburger')
+      const Menu = document.getElementById('menu')
+
+      Hamburger.addEventListener('click', () => {
+        Menu.classList.toggle('hidden')
+      })
+    </script>
   </body>
 </html>
